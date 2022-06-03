@@ -1,0 +1,116 @@
+/*
+main > div{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 20px;
+    min-width: 180px;
+    height: 300px;
+}
+
+.myimage{
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    background-color: red;
+    border-radius: 5%;
+    position: relative;
+}
+
+
+/*
+.title{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:#e85c44;
+}
+
+div > p{
+    font-weight: 400;
+    color: grey;
+}
+
+@media(min-width:1300px){
+    main{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+*/
+
+/*ALTERNATIVE WAY*/
+
+main {
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.title{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:#e85c44;
+}
+
+div > p{
+    font-weight: 400;
+    color: grey;
+}
+
+main > div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 20px;
+    min-width: 180px;
+
+}
+
+.myimage{
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border-radius: 5%;
+    position: relative;
+}
+
+.first-color{
+    background-color: blue;
+}
+.second-color{
+    background-color: red;
+}
+.third-color{
+    background-color: greenyellow;
+}
+.fourt-color{
+    background-color: magenta;
+}
+
+@media(min-width:1300px){
+    main{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+@media(max-width:1000px){
+    main{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media(max-width:550px){
+    main{
+        grid-template-columns: 1fr;
+
+    }
+}
